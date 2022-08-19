@@ -65,6 +65,7 @@ const Portfolio = () => {
             <img src={rickandmortybg} />
           }
         />
+        <div className="divider-line"></div>
         <div className="portfolio__more-projects-container">
           <div className="more-projects__title-and-description">
             <h3>More projects</h3>

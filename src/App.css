@@ -43,6 +43,12 @@ body{
   font-weight: bold;
 }
 
+.divider-line{
+  height: 1px;
+  background-color: var(--line-color);
+  width: 100%;
+}
+
 nav{
   height: 12vh;
   display: flex;
@@ -280,6 +286,10 @@ nav{
   gap: 3rem;
 }
 
+.about-me__container .divider-line{
+  margin-top: 1rem;
+}
+
 .about-me__about-me-container{
   display: flex;
   flex-direction: column;
@@ -296,6 +306,8 @@ nav{
 
 .portfolio__container{
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio__title-and-descritpion{
