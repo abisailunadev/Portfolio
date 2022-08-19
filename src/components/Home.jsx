@@ -1,16 +1,20 @@
 import React from 'react';
 import default_pp from '../images/default_pp.jpg'
+import { useSelector } from 'react-redux';
 
 const Home = () => {
+
+  const isEnglish = useSelector(state => state.isEnglish)
+
   return (
     <div className='home__container' id='home'>
       <div className="home__presentation">
         <div className="home__sqr">
           <div className="home__line-bar"></div>
         </div>
-        <h2>Gusto en conocerte</h2>
-        <h1>Soy Abisai, Desarrollador Full Stack</h1>
-        <p>¡Me gustan los retos y aprender algo nuevo cada día!</p>
+        <h2>{isEnglish ? 'Nice to meet you' : 'Gusto en conocerte'}</h2>
+        <h1>{isEnglish ? `I'm Abisai, a Web Full Stack Developer` : 'Soy Abisai, Desarrollador Full Stack'}</h1>
+        <p>{isEnglish ? 'I love challenges and learn something new everyday!' : '¡Me encantan los retos y aprender algo nuevo cada día!'}</p>
         <div className="home__contact-media">
           <div className="home__social-media">
             <ul>
@@ -28,14 +32,14 @@ const Home = () => {
           </div>
           <div className="home__cv">
             <a href="">
-              <h3>Descarga mi CV</h3>
+              <h3>{isEnglish ? 'Download my CV' : 'Descarga mi CV'}</h3>
               <div className="home__line-bar"></div>
             </a>
           </div>
         </div>
         <div className="home__profile-picture">
           <img src={default_pp} alt="" />
-          <p>¡Hola, soy yo! {':)'}</p>
+          <p>{isEnglish ? 'Hi, its me! :)' : '¡Hola, soy yo! :)'}</p>
         </div>
       </div>
     </div>

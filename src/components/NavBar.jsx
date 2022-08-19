@@ -1,4 +1,6 @@
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { setIsEnglish } from '../store/slices/isEnglish.slice';
 
 const NavBar = () => {
 
@@ -6,6 +8,9 @@ const NavBar = () => {
     document.getElementById('nav__options-overlay').classList.toggle('nav__options-show')
     document.getElementById('nav-icon3').classList.toggle('open')
   }
+
+  const isEnglish = useSelector(state => state.isEnglish);
+  const dispatch = useDispatch();
 
   return (
     <nav>
@@ -18,21 +23,34 @@ const NavBar = () => {
         <div className="nav__options-overlay" id='nav__options-overlay'>
           <ul>
             <li onClick={toggleMenu}>
-              <a href="#home">Inicio</a>
+              <a href="#home">
+                {isEnglish ? 'Home' : 'Inicio'}
+              </a>
             </li>
             <li onClick={toggleMenu}>
-              <a href="#about-me">Acerca de mi</a>
+              <a href="#about-me">
+                {isEnglish ? 'About me' : 'Acerca de mi'}
+              </a>
             </li>
             <li onClick={toggleMenu}>
-              <a href="#technologies">Tecnologías</a>
+              <a href="#technologies">
+                {isEnglish ? 'Technologies' : 'Tecnologías'}
+              </a>
             </li>
             <li onClick={toggleMenu}>
-              <a href="#portfolio">Portafolio</a>
+              <a href="#portfolio">
+                {isEnglish ? 'Portfolio' : 'Portafolio'}
+              </a>
             </li>
             <li onClick={toggleMenu}>
-              <a href="#contact">Contacto</a>
+              <a href="#contact">
+                {isEnglish ? 'Contact' : 'Contacto'}
+              </a>
             </li>
           </ul>
+        </div>
+        <div className="nav__language-option" onClick={() => dispatch(setIsEnglish(!isEnglish))}>
+          <h2>{isEnglish ? 'ESP' : 'ENG'}</h2>
         </div>
         <div className="nav__hamburguer-menu" onClick={toggleMenu}>
           <div id="nav-icon3">

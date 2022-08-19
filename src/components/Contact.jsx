@@ -1,29 +1,33 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 const Contact = () => {
+
+  const isEnglish = useSelector(state => state.isEnglish);
+
   return (
     <div className='contact__container' id='contact'>
       <div className="home__sqr">
         <div className="home__line-bar"></div>
       </div>
       <div className="contact__description">
-        <h2>¿Interesado/a en trabajar juntos?</h2>
-        <h2>¡Hablemos!</h2>
+        <h2>{isEnglish ? 'Interested in working together?' : '¿Interesado/a en trabajar juntos?'}</h2>
+        <h2>{isEnglish ? `Let's talk!` : '¡Hablemos!'}</h2>
       </div>
       <div className="contact__form-container">
         <form action="">
           <input
             type="name"
-            placeholder='Tu nombre'
+            placeholder={isEnglish ? 'Enter your name' : 'Escribe tu nombre'}
           />
           <input
             type="email"
-            placeholder='Tu correo'
+            placeholder={isEnglish ? 'Your email address' : 'Tu correo'}
           />
-          <textarea name="" id="" cols="30" rows="10" placeholder='Mensaje'>
+          <textarea name="" id="" cols="30" rows="10" placeholder={isEnglish ? 'Description' : 'Descripción'}>
           </textarea>
           <button>
-            Contáctame
+            {isEnglish ? 'Contact me' : 'Contáctame'}
             <div className="home__line-bar"></div>
           </button>
         </form>
@@ -32,7 +36,7 @@ const Contact = () => {
         <div className="home__line-bar"></div>
       </div>
       <div className="contact__git-container">
-        <h2>Ponte en contacto conmigo</h2>
+        <h2>{isEnglish ? 'Get in touch with me' : 'Ponte en contacto conmigo'}</h2>
       </div>
       <div className="git__contact-media-container">
         <div className="git__contact-media">
