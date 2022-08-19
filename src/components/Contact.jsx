@@ -7,23 +7,23 @@ const Contact = () => {
         <div className="home__line-bar"></div>
       </div>
       <div className="contact__description">
-        <h2>Interested in working together?</h2>
-        <h2>Let's talk!</h2>
+        <h2>¿Interesado/a en trabajar juntos?</h2>
+        <h2>¡Hablemos!</h2>
       </div>
       <div className="contact__form-container">
         <form action="">
           <input
             type="name"
-            placeholder='Your name'
+            placeholder='Tu nombre'
           />
           <input
             type="email"
-            placeholder='Your email address'
+            placeholder='Tu correo'
           />
-          <textarea name="" id="" cols="30" rows="10" placeholder='Your message'>
+          <textarea name="" id="" cols="30" rows="10" placeholder='Mensaje'>
           </textarea>
           <button>
-            Contact me
+            Contáctame
             <div className="home__line-bar"></div>
           </button>
         </form>
@@ -32,7 +32,7 @@ const Contact = () => {
         <div className="home__line-bar"></div>
       </div>
       <div className="contact__git-container">
-        <h2>Get in touch with me</h2>
+        <h2>Ponte en contacto conmigo</h2>
       </div>
       <div className="git__contact-media-container">
         <div className="git__contact-media">

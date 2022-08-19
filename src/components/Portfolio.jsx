@@ -10,9 +10,9 @@ const Portfolio = () => {
       </div>
       <div className="portfolio__title-and-descritpion">
         <div className="span__title-marked">
-          <span>/</span><h2>PORTFOLIO</h2>
+          <span>/</span><h2>PORTAFOLIO</h2>
         </div>
-        <p><b>Take a look at the latest projects I've done</b></p>
+        <p><b>¡Échale un ojo a los últimos proyectos que he hecho!</b></p>
       </div>
       <div className="portfolio__projects-container">
         <ProjectCard
@@ -27,7 +27,7 @@ const Portfolio = () => {
             </>
           }
           name='E-commerce'
-          description='Digital market to buy products with authentication'
+          description='Tienda digital para comprar productos con autenticación de usuario'
         />
         <ProjectCard
           link='https://tubular-tiramisu-3fc6d7.netlify.app/'
@@ -42,7 +42,7 @@ const Portfolio = () => {
             </>
           }
           name='Pokedex'
-          description='Characters library with authentication'
+          description='Galería de personajes con rutas protegidas'
           img=
           {
             <img src={pokedexbg} />
@@ -58,8 +58,8 @@ const Portfolio = () => {
               <img src={css} />
             </>
           }
-          name='Wiki Rick and Morty'
-          description='Characters library made with React'
+          name='Wiki Rick & Morty'
+          description='Galería de personajes hecha con React.js'
           img=
           {
             <img src={rickandmortybg} />
@@ -68,7 +68,7 @@ const Portfolio = () => {
         <div className="divider-line"></div>
         <div className="portfolio__more-projects-container">
           <div className="more-projects__title-and-description">
-            <h3>More projects</h3>
+            <h3>Más proyectos</h3>
           </div>
           <div className="more-projects__container">
             <ProjectCard
@@ -81,8 +81,8 @@ const Portfolio = () => {
                   <img src={css} />
                 </>
               }
-              name='Users CRUD'
-              description='To create, edit and remove users'
+              name='CRUD Usuarios'
+              description='Para crear, editar y eliminar usuarios'
               img=
               {
                 <img src={crudusersbg} />
@@ -98,7 +98,7 @@ const Portfolio = () => {
                 </>
               }
               name='Weather App'
-              description='Provides you weather conditions based on your localization'
+              description='Condiciones del clima en tiempo real, basadas en tu localización'
             />
           </div>
         </div>

@@ -19,11 +19,11 @@ const Footer = () => {
       </div>
       <div className="footer__menu-options">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about-me">About me</a></li>
-          <li><a href="#technologies">Technologies</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#about-me">Acerca de mi</a></li>
+          <li><a href="#technologies">Tecnologías</a></li>
+          <li><a href="#portfolio">Portafolio</a></li>
+          <li><a href="#contact">Contacto</a></li>
         </ul>
       </div>
       <div className="footer__about">

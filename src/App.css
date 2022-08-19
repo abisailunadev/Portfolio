@@ -121,7 +121,7 @@ nav{
   top: 0;
   right: 0;
   height: 12vh;
-  width: 20%;
+  width: 65px;
   display: flex;
   justify-content: center;
   height: 100%;
@@ -300,6 +300,25 @@ nav{
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.about-me___technologies-list-container{
+  margin-top: 1rem;
+}
+
+.about-me___technologies-list-container ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.about-me___technologies-list-container ul li{
+  list-style: none;
+  text-align: center;
+}
+
+.about-me___technologies-list-container ul li img{
+  width: 50px;
 }
 
 /* Portfolio */
