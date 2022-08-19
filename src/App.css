@@ -267,7 +267,7 @@ nav{
 
 .home__profile-picture img{
   height: 200px;
-  width: max-content;
+  width: min-content;
 }
 
 /* About me */
@@ -340,7 +340,7 @@ nav{
 
 .project-card__img img{
   width: 100%;
-  height: max-content;
+  height: min-content;
   border-radius: 0 0 1rem 1rem;
 }
 
@@ -371,7 +371,7 @@ nav{
 
 .more-projects__container .project-card__img img{
   width: 100%;
-  height: max-content;
+  height: min-content;
   border-radius: 0 0 1rem 1rem;
 }
 
