@@ -263,11 +263,11 @@ nav{
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  width: 100%;
 }
 
 .home__profile-picture img{
-  height: 200px;
-  width: min-content;
+  width: 200px;
 }
 
 /* About me */
@@ -372,7 +372,6 @@ nav{
 
 .more-projects__container .project-card__img img{
   width: 100%;
-  height: min-content;
   border-radius: 0 0 1rem 1rem;
 }
 
