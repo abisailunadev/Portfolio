@@ -336,11 +336,11 @@ nav{
 
 .project-card__img{
   display: flex;
+  height: fit-content;
 }
 
 .project-card__img img{
   width: 100%;
-  height: min-content;
   border-radius: 0 0 1rem 1rem;
 }
 
@@ -367,6 +367,7 @@ nav{
 
 .more-projects__container .project-card__img{
   display: flex;
+  height: fit-content;
 }
 
 .more-projects__container .project-card__img img{
