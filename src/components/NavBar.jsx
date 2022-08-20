@@ -14,50 +14,54 @@ const NavBar = () => {
 
   return (
     <nav>
-      <div className="nav__logo">
-        <a href=".">
-          <h2>{'{ab:sa:}'}</h2>
-        </a>
-      </div>
-      <div className="nav__options">
-        <div className="nav__options-overlay" id='nav__options-overlay'>
-          <ul>
-            <li onClick={toggleMenu}>
-              <a href="#home">
-                {isEnglish ? 'Home' : 'Inicio'}
-              </a>
-            </li>
-            <li onClick={toggleMenu}>
-              <a href="#about-me">
-                {isEnglish ? 'About me' : 'Acerca de mi'}
-              </a>
-            </li>
-            <li onClick={toggleMenu}>
-              <a href="#technologies">
-                {isEnglish ? 'Technologies' : 'Tecnologías'}
-              </a>
-            </li>
-            <li onClick={toggleMenu}>
-              <a href="#portfolio">
-                {isEnglish ? 'Portfolio' : 'Portafolio'}
-              </a>
-            </li>
-            <li onClick={toggleMenu}>
-              <a href="#contact">
-                {isEnglish ? 'Contact' : 'Contacto'}
-              </a>
-            </li>
-          </ul>
+      <div className="nav">        
+        <div className="nav__logo">
+          <a href=".">
+            <h2><span>{'{'}</span>ab:sa:<span>{'}'}</span></h2>
+          </a>
         </div>
-        <div className="nav__language-option" onClick={() => dispatch(setIsEnglish(!isEnglish))}>
-          <h2>{isEnglish ? 'ESP' : 'ENG'}</h2>
-        </div>
-        <div className="nav__hamburguer-menu" onClick={toggleMenu}>
-          <div id="nav-icon3">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+        <div className="nav__options">
+          <div className="nav__options-overlay" id='nav__options-overlay'>
+            <ul>
+              <li onClick={toggleMenu}>
+                <a href="#home">
+                  {isEnglish ? 'Home' : 'Inicio'}
+                </a>
+              </li>
+              <li onClick={toggleMenu}>
+                <a href="#about-me">
+                  {isEnglish ? 'About me' : 'Acerca de mi'}
+                </a>
+              </li>
+              <li onClick={toggleMenu}>
+                <a href="#technologies">
+                  {isEnglish ? 'Technologies' : 'Tecnologías'}
+                </a>
+              </li>
+              <li onClick={toggleMenu}>
+                <a href="#portfolio">
+                  {isEnglish ? 'Portfolio' : 'Portafolio'}
+                </a>
+              </li>
+              <li onClick={toggleMenu}>
+                <a href="#contact">
+                  {isEnglish ? 'Contact' : 'Contacto'}
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="nav__language-option">
+            <h2 onClick={() => dispatch(setIsEnglish(!isEnglish))}>
+              {isEnglish ? 'ESP' : 'ENG'}
+            </h2>
+          </div>
+          <div className="nav__hamburguer-menu" onClick={toggleMenu}>
+            <div id="nav-icon3">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
       </div>

@@ -50,10 +50,15 @@ body{
 }
 
 nav{
+  position: fixed;
+  width: 100%;
+  background-color: var(--secondary-color);
+}
+
+.nav{
   height: 12vh;
   display: flex;
   justify-content: space-between;
-  position: fixed;
   width: 100%;
   background-color: var(--secondary-color);
 }
@@ -68,6 +73,10 @@ nav{
 
 .nav__logo a{
   text-decoration: none;
+}
+
+.nav__logo span{
+  color: var(--span-color);
 }
 
 .nav__options-overlay{
@@ -125,6 +134,17 @@ nav{
   padding: 0 0.5rem;
 }
 
+.nav__language-option h2{
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+.nav__language-option h2:hover{
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+}
+
 .nav__hamburguer-menu{
   position: absolute;
   top: 0;
@@ -138,8 +158,8 @@ nav{
 }
 
 #nav-icon3{
-  width: 50%;
-  height: 35.5%;
+  width: 30px;
+  height: 25px;
   position: relative;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -248,9 +268,11 @@ nav{
 
 .home__social-media ul li a{
   color: var(--text-color);
+  transition: 0.3s;
 }
 
-.home__social-media ul li a:focus{
+.home__social-media ul li a:hover{
+  transition: 0.3s;
   color: white;
 }
 
@@ -269,6 +291,12 @@ nav{
 .home__cv .home__line-bar{
   background-color: var(--line-color);
   width: 100%;
+  transition: 0.3s;
+}
+
+.home__cv:hover .home__line-bar{
+  transition: 0.3s;
+  background-color: white;
 }
 
 .home__profile-picture{
@@ -351,12 +379,34 @@ nav{
   gap: 3rem;
 }
 
+.portfolio_projects-webview-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio__projects-first-container{
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.portfolio__projects-second-container{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 /* > Project Card */
 
 .project-card__container{
   border-radius: 1rem;
   background-color: var(--card-bg-color);
   text-decoration: none;
+  max-width: 400px;
+}
+
+.project-card__container:hover{
+  cursor: pointer;
 }
 
 .project-card__technologies-container{
@@ -462,6 +512,13 @@ nav{
   transition: 0.3s;
 }
 
+.contact__form-container form input:hover,
+.contact__form-container form textarea:hover{
+  outline: none;
+  border-bottom: 2px solid white;
+  transition: 0.3s;
+}
+
 .contact__form-container button{
   border: none;
   font-weight: bold;
@@ -475,6 +532,19 @@ nav{
   gap: 0.3rem;
   margin-top: 1rem;
   width: fit-content;
+}
+
+.contact__form-container button:hover{
+  cursor: pointer;
+}
+
+.contact__form-container .home__line-bar{
+  transition: 0.3s;
+}
+
+.contact__form-container button:hover .home__line-bar{
+  background-color: white;
+  transition: 0.3s;
 }
 
 .contact__form-container .home__line-bar{
@@ -515,7 +585,7 @@ nav{
   transition: 0.3s;
 }
 
-.git__contact-media .home__line-bar:hover{
+.git__contact-link:hover .home__line-bar{
   background-color: white;
   transition: 0.3s;
 }
@@ -524,6 +594,12 @@ nav{
 
 .footer__container{
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer__social-media-menu-options{
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -572,4 +648,300 @@ nav{
 .footer__about{
   text-align: center;
   margin-top: 2rem;
+}
+
+/* <!-- --> */
+
+/*          Desktop          */
+
+/* <!-- --> */
+
+@media screen and ( min-width: 992px ){
+
+  /* Nav */
+
+  nav{
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav{
+    padding-left: 1rem;
+    max-width: 1200px;
+  }
+
+  .nav__options{
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .nav__options-overlay{
+    transform: translateY(0);
+    position: relative;
+    background-color: transparent;
+  }
+
+  .nav__options-overlay ul{
+    flex-direction: row;
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+    gap: 1.5rem;
+  }
+
+  .nav__options-overlay ul li a{
+    font-size: 1.2rem;
+  }
+
+  .nav__language-option{
+    margin: 0;
+  }
+  
+  .nav__language-option h2{
+    font-size: 1.2rem;
+  }
+
+  .nav__hamburguer-menu{
+    display: none;
+  }
+
+  /* Home */
+
+  .home-body__container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .home__container{
+    max-width: 1200px;
+  }
+
+  .home__presentation{
+    display: flex;
+    height: 90vh;
+    justify-content: space-between;
+  }
+
+  .home__line-bar{
+    width: 125px;
+    height: 5px;
+  }
+
+  .home__presentation-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .home__presentation-description h2{
+    font-size: 3rem;
+  }
+
+  .home__presentation-description h1{
+    font-size: 4rem;
+  }
+
+  .home__contact-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .home__cv h3{
+    font-size: 1.6rem;
+  }
+
+  .home__profile-picture{
+    position: absolute;
+    bottom: 2rem;
+    width: 90%;
+    height: 50%;
+    z-index: -1;
+    max-width: 1200px;
+  }
+
+  .home__profile-picture img{
+    height: 100%;
+    width: auto;
+  }
+
+  .home__profile-picture p{
+    display: none;
+  }
+
+  /* About me */
+
+  .about-me-body__container{
+    background-color: var(--secondary-second-color);
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-me__container{
+    flex-direction: row;
+    align-items: flex-start;
+    height: fit-content;
+    padding: 5rem 2rem;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .about-me__container .divider-line{
+    width: 1px;
+    height: 300px;
+  }
+
+  .about-me__about-me-container{
+    width: 50%;
+    height: 100%;
+  }
+
+  .about-me__technologies-container{
+    width: 50%;
+    height: 100%;
+  }
+
+  .about-me___technologies-list-container ul{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  /* Portfolio */
+
+  .portfolio-body__container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .portfolio__container{
+    padding: 5rem 2rem;
+    width: 1200px;
+    max-width: 1200px;
+  }
+
+  .portfolio__projects-container{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .portfolio__projects-container .divider-line{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .portfolio_projects-webview-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .portfolio__projects-first-container{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2rem;
+  }
+
+  .portfolio__projects-first-container .project-card__container{
+    height: fit-content;
+  }
+
+  .portfolio__projects-second-container{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 2rem;
+  }
+
+  /* > Project Card */
+
+  .project-card__container{
+    width: 400px;
+  }
+
+  .project-card__img{
+    display: flex;
+  }
+
+  /* - */
+
+  .more-projects__container{
+    width: fit-content;
+  }
+
+  /* Contact */
+
+  .contact-body__container{
+    background-color: var(--secondary-second-color);
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact__container{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+  }
+
+  .contact__description-form-container{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .contact__description{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0;
+    width: 50%;
+  }
+
+  .contact__description h2{
+    font-size: 2.5rem;
+  }
+
+  .contact__git-title-contact-container{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .contact__git-container h2{
+    font-size: 2.5rem;
+  }
+
+  .contact__git-container{
+    width: 50%;
+  }
+
+  .git__contact-media-container h4{
+    font-size: 1.4rem;
+  }
+
+  .git__contact-media-container h3{
+    font-size: 1.7rem;
+  }
+
+  .footer__container{
+    align-items: center;
+  }
+
+  .footer__social-media-menu-options{
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .footer__social-media{
+    display: flex;
+    align-items: center;
+  }
+
 }
