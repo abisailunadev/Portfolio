@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <div className='footer__container'>
-      <div className="footer__social-media-menu-options">
+      <div className="footer__social-media-menu-options fade-in">
         <div className="footer__social-media">
           <ul>
             <li>
@@ -52,7 +52,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="footer__about">
+      <div className="footer__about fade-in">
         <p>© Aldo Abisai Luna Rojas</p>
       </div>
     </div>

@@ -9,7 +9,7 @@ const AboutMe = () => {
   return (
     <div className="about-me-body__container">
       <div className='about-me__container' id='about-me'>
-        <div className="about-me__about-me-container">
+        <div className="about-me__about-me-container fade-in">
           <div className="home__sqr">
             <div className="home__line-bar"></div>
           </div>
@@ -31,7 +31,7 @@ const AboutMe = () => {
             )}
         </div>
         <div className="divider-line" id='technologies'></div>
-        <div className="about-me__technologies-container">
+        <div className="about-me__technologies-container fade-in">
           <div className="home__sqr">
             <div className="home__line-bar"></div>
           </div>

@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div className="contact-body__container">
       <div className='contact__container' id='contact'>
-        <div className="contact__description-form-container">
+        <div className="contact__description-form-container fade-in">
           <div className="contact__description">
             <div className="home__sqr">
               <div className="home__line-bar"></div>
@@ -35,7 +35,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="contact__git-title-contact-container">
+        <div className="contact__git-title-contact-container fade-in">
           <div className="contact__git-container">
             <div className="home__sqr">
               <div className="home__line-bar"></div>

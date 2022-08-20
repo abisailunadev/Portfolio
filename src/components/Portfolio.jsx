@@ -10,10 +10,10 @@ const Portfolio = () => {
   return (
     <div className="portfolio-body__container">
       <div className='portfolio__container' id='portfolio'>
-        <div className="home__sqr">
+        <div className="home__sqr fade-in">
           <div className="home__line-bar"></div>
         </div>
-        <div className="portfolio__title-and-descritpion">
+        <div className="portfolio__title-and-descritpion fade-in">
           <div className="span__title-marked">
             <span>/</span><h2>{isEnglish ? 'PORTFOLIO' : 'PORTAFOLIO'}</h2>
           </div>
