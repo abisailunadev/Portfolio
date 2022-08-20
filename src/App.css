@@ -835,6 +835,7 @@ nav{
   .portfolio_projects-webview-container{
     display: flex;
     justify-content: center;
+    flex-direction: row;
   }
 
   .portfolio__projects-first-container{
