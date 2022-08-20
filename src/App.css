@@ -135,7 +135,7 @@ nav{
 }
 
 .nav__language-option h2{
-  color: var(--text-color);
+  color: white;
   transition: 0.3s;
 }
 
@@ -701,6 +701,7 @@ nav{
   
   .nav__language-option h2{
     font-size: 1.2rem;
+    color: var(--text-color);
   }
 
   .nav__hamburguer-menu{
