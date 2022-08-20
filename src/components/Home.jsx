@@ -1,5 +1,6 @@
 import React from 'react';
 import default_pp from '../images/default_pp.jpg'
+import CV_ENG from '../files/CV_ENG.pdf'
 import { useSelector } from 'react-redux';
 
 const Home = () => {
@@ -34,7 +35,7 @@ const Home = () => {
               </ul>
             </div>
             <div className="home__cv">
-              <a href="">
+              <a href={CV_ENG} download>
                 <h3>{isEnglish ? 'Download my CV' : 'Descarga mi CV'}</h3>
                 <div className="home__line-bar"></div>
               </a>
