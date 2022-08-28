@@ -22,27 +22,7 @@ const Portfolio = () => {
         <div className="portfolio__projects-container">
           <div className="portfolio_projects-webview-container">
             <div className="portfolio__projects-first-container">
-              <ProjectCard
-                technologies=
-                {
-                  <>
-                    <img src={react} />
-                    <img src={html} />
-                    <img src={css} />
-                    <img src={reactrouterdom} />
-                    <img src={redux} />
-                  </>
-                }
-                name='E-commerce'
-                description={isEnglish ? 'Digital market to buy products with user authentication' : 'Tienda digital para comprar productos con autenticación de usuario'}
-                img=
-                {
-                  <img src={pokedexbg} />
-                }
-              />
-            </div>
-            <div className="portfolio__projects-second-container">
-              <ProjectCard
+            <ProjectCard
                 link='https://tubular-tiramisu-3fc6d7.netlify.app/'
                 technologies=
                 {
@@ -56,6 +36,26 @@ const Portfolio = () => {
                 }
                 name='Pokedex'
                 description={isEnglish ? 'Characters library with protected routes' : 'Galería de personajes con rutas protegidas'}
+                img=
+                {
+                  <img src={pokedexbg} />
+                }
+              />
+            </div>
+            <div className="portfolio__projects-second-container">
+            <ProjectCard
+                technologies=
+                {
+                  <>
+                    <img src={react} />
+                    <img src={html} />
+                    <img src={css} />
+                    <img src={reactrouterdom} />
+                    <img src={redux} />
+                  </>
+                }
+                name='E-commerce'
+                description={isEnglish ? 'Digital market to buy products with user authentication' : 'Tienda digital para comprar productos con autenticación de usuario'}
                 img=
                 {
                   <img src={pokedexbg} />
@@ -81,11 +81,11 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="divider-line"></div>
-          <div className="portfolio__more-projects-container">
+          <div className="portfolio__more-projects-container fade-in">
             <div className="more-projects__title-and-description">
               <h3>{isEnglish ? 'More projects' : 'Más proyectos'}</h3>
             </div>
-            <div className="more-projects__container">
+            <div className="more-projects__container fade-in">
               <ProjectCard
                 link='https://bucolic-boba-b2b5d7.netlify.app/'
                 technologies=

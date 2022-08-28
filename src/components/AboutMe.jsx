@@ -17,13 +17,13 @@ const AboutMe = () => {
             <span>/</span><h2>{isEnglish ? 'ABOUT ME' : 'ACERCA DE Mí'}</h2>
           </div>
           {isEnglish ? (
-              <p>Hi, my name is Aldo Abisai Luna Rojas, I have developed knowledge on some technologies such as <b>Javascript</b>, <b>HTML</b>, <b>CSS</b>, <b>React.js {'(React Router DOM, Redux)'}</b>, thanks to them I've developed the projects on this portfolio.
+              <p>I have developed knowledge on some technologies such as <b>Javascript</b>, <b>HTML</b>, <b>CSS</b>, <b>React.js {'(React Router DOM, Redux)'}</b>, thanks to them I've developed the projects on this portfolio.
               <br />
               The next technologies to achieve are <b>Node.js</b> and <b>Python</b>, at the same time improving my current technologies.
               <br />
               Likewise, I'm looking for a job where I can <b>learn</b> and <b>develop as a profesional</b>.</p>
             ) : (
-              <p>Hola, me llamo Aldo Abisai Luna Rojas, he adquirido conocimientos sobre ciertas tecnologías como <b>Javascript</b>, <b>HTML</b>, <b>CSS</b>, <b>React.js {'(React Router DOM, Redux)'}</b>, gracias a las cuales he podido desarollar los proyectos dentro de este portafolio.
+              <p>He adquirido conocimientos sobre ciertas tecnologías como <b>Javascript</b>, <b>HTML</b>, <b>CSS</b>, <b>React.js {'(React Router DOM, Redux)'}</b>, gracias a las cuales he podido desarollar los proyectos dentro de este portafolio.
               <br />
               Las siguientes tecnologías como meta son <b>Node.js</b> y <b>Python</b>, perfeccionando las que manejo actualmente.
               <br />

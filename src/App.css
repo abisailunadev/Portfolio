@@ -58,6 +58,10 @@ body{
   opacity: 1;
 }
 
+.more-projects__container .fade-in{
+  opacity: 1;
+}
+
 nav{
   position: fixed;
   width: 100%;
@@ -706,7 +710,7 @@ nav{
   }
 
   .nav__language-option{
-    margin: 0;
+    margin-right: 1.5rem;
   }
   
   .nav__language-option h2{
