@@ -32,6 +32,16 @@ body{
   color: var(--text-color);
 }
 
+body::-webkit-scrollbar{
+  background-color: transparent;
+  width: 0.75rem;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: var(--secondary-second-color);
+  border-radius: 4px;
+}
+
 .span__title-marked{
   display: flex;
   align-items: center;
