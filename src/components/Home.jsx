@@ -1,5 +1,5 @@
 import React from 'react';
-import default_pp from '../images/default_pp.jpg'
+import ownpicture from '../images/ownpicture.png'
 import CV_ENG from '../files/CV_ENG.pdf'
 import { useSelector } from 'react-redux';
 
@@ -42,7 +42,7 @@ const Home = () => {
             </div>
           </div>
           <div className="home__profile-picture">
-            <img src={default_pp} alt="" />
+            <img src={ownpicture} alt="" />
             <p>{isEnglish ? 'Hi, its me! :)' : '¡Hola, soy yo! :)'}</p>
           </div>
         </div>
