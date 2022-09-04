@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import { html, css, js, react, reactrouterdom, redux, bootstrap, nodejs, pokedexbg, rickandmortybg, crudusersbg } from '../images';
+import { html, css, js, react, reactrouterdom, redux, bootstrap, nodejs, pokedexbg, rickandmortybg, crudusersbg, weatherappbg } from '../images';
 import { useSelector } from 'react-redux';
 
 const Portfolio = () => {
@@ -104,6 +104,7 @@ const Portfolio = () => {
                 }
               />
               <ProjectCard
+                link='https://papaya-twilight-c609d3.netlify.app/'
                 technologies=
                 {
                   <>
@@ -114,6 +115,9 @@ const Portfolio = () => {
                 }
                 name={isEnglish ? 'Weather App' : 'Clima App'}
                 description={isEnglish ? 'Weather conditions in real time, based on your localization.' : 'Condiciones del clima en tiempo real, basadas en tu localización'}
+                img={
+                  <img src={weatherappbg} />
+                }
               />
             </div>
           </div>

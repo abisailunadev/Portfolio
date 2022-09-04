@@ -427,6 +427,9 @@ nav{
   background-color: var(--card-bg-color);
   text-decoration: none;
   max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-card__container:hover{

@@ -9,3 +9,4 @@ export { default as nodejs } from './nodejs.svg';
 export { default as pokedexbg } from './pokedexbg.png';
 export { default as rickandmortybg } from './rickandmortybg.png';
 export { default as crudusersbg } from './crudusersbg.png';
+export { default as weatherappbg } from './weatherappbg.png';
